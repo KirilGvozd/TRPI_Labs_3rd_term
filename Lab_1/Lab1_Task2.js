@@ -7,5 +7,3 @@ let infinity = Infinity
 let number = 532
 let perimeter = "120mm"
 let message = alert("Введенные данные неверны")
-
-alert(`${username}, ${nameOfTheCity}, ${yearOfBirth}, ${redColor}, ${usersAnswer}, ${infinity}, ${number}, ${perimeter}, ${message}`)
