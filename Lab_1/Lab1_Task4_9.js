@@ -7,22 +7,30 @@ let squareArea = 5*5
 
 alert("В четырёхугольник А поместится " + Math.round(areaOfRectangle / squareArea) + " квадратов со стороной 5мм")
 
-// alert("Привет" < "привет")//true
-// alert("Привет" < "Пока")//false
-// alert(45 < "53")//true
-// alert(false > 3)//true
-// alert(true < "3")//true
-// alert(3 < "5мм")//false
-// alert(null < undefined)//false
+// 6 задание
+
+let i = 2
+let a = ++i
+let b = i++
+alert("Значение a: " + a)
+alert("Значение b: " + b)
+
+alert("Привет" < "привет")//true
+alert("Привет" < "Пока")//false
+alert(45 < "53")//true
+alert(false > 3)//false
+alert(true < "3")//true
+alert(3 < "5мм")//false
+alert(null < undefined)//false
 
 alert("Введённые вами данные неверны!")
 
-let answer = prompt("Сейчас ночь?", '')
+let answer = prompt("Сейчас выходной?", '')
 if (answer == "Да" || answer == "да") {
-    alert("Пора идти спать!")
+    alert("Ура, отдыхаем!")
 }
 else if (answer == "Нет" || answer == "нет") {
-    alert("Работайте!")
+    alert("Работаем и ждём выходные!")
 }
 else {
     alert("Вы не то ввели!")

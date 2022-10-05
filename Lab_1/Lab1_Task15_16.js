@@ -6,8 +6,8 @@ while (yourNumber < 100) {
 
 let numberOfTheDay = 1;
 
-    numberOfTheDay = Number(prompt("Введите любое число от 1 до 7", ''))
-    switch (numberOfTheDay) {
+    numberOfTheDayOfTheWeek = Number(prompt("Введите любое число от 1 до 7", ''))
+    switch (numberOfTheDayOfTheWeek) {
         case 1:
             alert("Понедельник");
             break;
