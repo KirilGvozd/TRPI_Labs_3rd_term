@@ -1,4 +1,4 @@
-let username = "Kirill"
+let userName = "Kirill"
 let nameOfTheCity = "Minsk"
 let yearOfBirth = 2003
 let redColor = "Red"

@@ -9,11 +9,11 @@ alert("В четырёхугольник А поместится " + Math.round(
 
 // 6 задание
 
-let i = 2
-let a = ++i
-let b = i++
-alert("Значение a: " + a)
-alert("Значение b: " + b)
+let a = 2
+alert(++a)
+alert(a++)
+alert(a++)
+alert(++a)
 
 alert("Привет" < "привет")//true
 alert("Привет" < "Пока")//false
@@ -21,7 +21,7 @@ alert(45 < "53")//true
 alert(false > 3)//false
 alert(true < "3")//true
 alert(3 < "5мм")//false
-alert(null < undefined)//false
+alert(null == undefined)//true
 
 alert("Введённые вами данные неверны!")
 
