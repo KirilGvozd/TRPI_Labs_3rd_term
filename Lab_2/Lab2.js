@@ -8,7 +8,7 @@ let circleFunctionExpression = function (radius) {
     alert("Диаметр окружности равен: " + (2 * radius));
     alert("Длина окружности равна: " + (2 * Math.PI * radius));
 }
-let arrowFunction = (radius) => {alert("Площадь окружности равна: " + (Math.PI * Math.pow(radius, 2)));
+let arrowFunction = radius => {alert("Площадь окружности равна: " + (Math.PI * Math.pow(radius, 2)));
     alert("Диаметр окружности равен: " + (2 * radius));
     alert("Длина окружности равна: " + (2 * Math.PI * radius));
 };
@@ -26,7 +26,9 @@ function counterOfStudents () {
             alert("До свидания");
             return counter;
         }
-        counter++
+        if (student !== "") {
+            counter++
+        }
     }
 }
 
@@ -38,7 +40,6 @@ function counterOfTime () {
     let minutes = 0;
     let numberOfTries = 26 * 26 * 26 * 26 * 26 * 10 * 10 * 10;
     let seconds = numberOfTries * 3;
-    alert(seconds);
     while (seconds >= 60) {
         if (seconds >= 60) {
             minutes++;
@@ -90,7 +91,7 @@ function finderOfWrongSymbol(userInput) {
 
     if (userInput.toLowerCase() !== dictionaryWord.toLowerCase()) {
         for (let i = 0; i < dictionaryWord.length; i++) {
-            if (userInput.toLowerCase()[i] !== dictionaryWord.toLowerCase()[i]) {
+            if (        userInput.toLowerCase()[i] !== dictionaryWord.toLowerCase()[i]) {
                 wrongSymbol = i;
                 break;
             }
@@ -128,7 +129,7 @@ let userInput = prompt("Введите текст или любое число: 
 conversions(userInput);
 
 //6 задание
-let studentAnswer = prompt("Введите словарное слово: ");
+let studentAnswer = prompt("Введите словарное слово к*р*ва: ");
 finderOfWrongSymbol(studentAnswer);
 
 //7 задание
