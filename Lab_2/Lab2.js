@@ -91,7 +91,7 @@ function finderOfWrongSymbol(userInput) {
 
     if (userInput.toLowerCase() !== dictionaryWord.toLowerCase()) {
         for (let i = 0; i < dictionaryWord.length; i++) {
-            if (        userInput.toLowerCase()[i] !== dictionaryWord.toLowerCase()[i]) {
+            if (userInput.toLowerCase()[i] !== dictionaryWord.toLowerCase()[i]) {
                 wrongSymbol = i;
                 break;
             }
