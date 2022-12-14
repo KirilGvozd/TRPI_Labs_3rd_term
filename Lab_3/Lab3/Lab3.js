@@ -10,6 +10,7 @@ function ModerationOfComments(comment) {
         editedComment = comment.replaceAll(/кот/ig, "*");
         editedComment = editedComment.replaceAll("собак", "Собак");
         editedComment = editedComment.replaceAll("пёс", "многоуважаемый пёс");
+        editedComment = editedComment.replaceAll("пес", "многоуважаемый пёс");
         return editedComment;
     }
 }
@@ -84,8 +85,8 @@ firstButton.innerHTML = "Первая кнопка";
 secondButton.innerHTML = "Вторая кнопка"
 accent.innerHTML = "Акцент";
 
-bodyOfPage.append(firstButton);
 bodyOfPage.append(secondButton);
+bodyOfPage.append(firstButton);
 bodyOfPage.append(accent);
 bodyOfPage.append(link);
 
@@ -135,49 +136,53 @@ alert("Количество товаров в списке: " + shoppingList.siz
 
 //5 задание
 let shoppingCart = new Map();
+exit = true;
 let sumOfAllProducts = 0;
-let checker = true;
-let product = {
-    Id: id = 0,
-    AmountOfProduct: counter = 0,
-    Price: price = 0
-}
-
-while (checker) {
-    let userAnswer = prompt("1 - Добавить товар в корзину\n" +
-        "2 - Удалить товар из корзины\n" +
-        "3 - Изменить кол-во товара\n" +
-        "0 - Выход");
-    switch (userAnswer) {
-        case "0":
-            alert("До свидания!")
-            checker = false;
+let numberOfAllProducts = 0;
+while (exit) {
+    let choice = Number(prompt("1 - Добавить товар\n2 - Удалить товар\n3 - Изменить кол-во товара\n4 - Информация о товарах в тележке\n5 - Выход"));
+    let temporary = {
+        Id: id = 0,
+        Counter: ct = 0,
+        Price: pr = 0
+    }
+    switch (choice) {
+        case 1: {
+            temporary.Id = Number(prompt("Введите id"));
+            temporary.Counter = Number(prompt("Введите кол-во товаров"));
+            temporary.Price = Number(prompt("Введите цену"));
+            shoppingCart.set(temporary.Id, temporary);
+            numberOfAllProducts++;
             break;
-        case "1":
-            product.Id = (prompt("Введите Id: "));
-            product.AmountOfProduct = Number(prompt("Введите количество: "));
-            product.Price = Number(prompt("Введите цену: "));
-            shoppingCart.set(product.id, product);
+        }
+        case 2: {
+            shoppingCart.delete(Number(prompt("Введите id товара для удаления")));
+            numberOfAllProducts--;
             break;
-        case "2":
-            shoppingCart.delete((prompt("Введите Id товара для удаления")));
-            break;
-        case "3":
-            let newProduct = {
-                Id: product.Id,
-                Count: Number(prompt("Введите новое кол-во")),
-                Price: product.Price
+        }
+        case 3: {
+            let buff = {
+                Id: temporary.Id,
+                Counter: Number(prompt("Введите новое кол-во товара")),
+                Price: temporary.Price
             }
-            shoppingCart.set((prompt("Введите Id товара")), newProduct);
+            shoppingCart.set(Number(prompt("Введите номер товара")), buff);
             break;
-        default:
-            alert("Вы не то выбрали!");
+        }
+        case 4: {
+            for (let item of shoppingCart.values()) {
+                sumOfAllProducts += item.Price * item.Counter;
+            }
+            alert(sumOfAllProducts + " - сумма " + numberOfAllProducts + " - кол-во позиций");
             break;
+        }
+        case 5: {
+            exit = false;
+            break;
+        }
+        default: {
+            exit = false;
+            break;
+        }
     }
 }
-
-for (let item of shoppingCart.values()) {
-    sumOfAllProducts += item.Price;
-}
-alert("Итоговая сумма товаров в корзине: " + sumOfAllProducts);
-alert("Количество позиций в корзине: " + shoppingCart.size);
