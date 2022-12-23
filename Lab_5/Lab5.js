@@ -47,7 +47,6 @@ for (let shoe of products){
 }
 
 //3 задание
-/*
 let foundChecker = false;
 let lowestPrice = 30;
 let highestPrice = 200;
@@ -88,7 +87,6 @@ for (let key in products.shoes){
 if(!foundChecker) {
     alert(`Нет пары ${sizeOfShoe} размера!`);
 }
-*/
 
 //4 задание
 let newBoots = {};
@@ -133,5 +131,6 @@ Object.defineProperty(newBoots, "finalCost", {
 });
 
 alert(`Полная цена: ${newBoots.price}`)
+newBoots.price = 300;
 alert(`Скидка: ${newBoots.discount}`);
 alert(`Цена со скидкой: ${newBoots.finalCost}`);
