@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb29b7e1-a759-44a5-a761-f10e1f37bf01" name="Changes" comment="" />
+    <list default="true" id="bb29b7e1-a759-44a5-a761-f10e1f37bf01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab_7/Lab7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_7/Lab7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_7/Lab7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_8/Lab8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/.idea/Lab6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Laptop.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/MacBook.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Task1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Task1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Task2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Task2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/ЛР6 Клиентский JS+.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Т5 ООП в функциональном и прототипном стиле.docx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,15 +32,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Semestr_3/JS",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Semestr_3/JS&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -33,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663756402849</updated>
       <workItem from="1663756404275" duration="27000" />
+      <workItem from="1672599802658" duration="4000" />
     </task>
     <servers />
   </component>
